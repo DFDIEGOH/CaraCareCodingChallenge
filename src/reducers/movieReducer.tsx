@@ -1,6 +1,8 @@
+/* eslint-disable prettier/prettier */
 import {SEARCH_MOVIE, SELECT_MOVIE} from '../actions/types';
 
 const initialState = {
+  search: 'Search...(state)',
   results: [],
   selected: {},
 };
@@ -15,7 +17,7 @@ const movieReducer = (state = initialState, action) => {
     case SELECT_MOVIE:
       return {
         ...state,
-        selected: action.payload.id,
+        selected: action.payload,
       };
 
     default:

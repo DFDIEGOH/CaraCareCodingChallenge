@@ -1,18 +1,22 @@
+/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable prettier/prettier */
 import React, {Component} from 'react';
 import {
   StyleSheet,
   View,
   Text,
   TextInput,
-  Button,
   ScrollView,
   Image,
   TouchableHighlight,
 } from 'react-native';
 import {connect} from 'react-redux';
-import {searchMovies} from './actions/movies';
+import {searchMovies, displayDetails} from './actions/movies';
 
-class Home extends Component<{}, any> {
+class Home extends Component {
+  constructor() {
+    super();
+  }
   state = {
     search: '',
   };
@@ -29,15 +33,22 @@ class Home extends Component<{}, any> {
           value={this.state.search}
         />
         <ScrollView>
-          {this.props.movies.map((result) => (
-            <View style={styles.result}>
-              <Image
-                source={{uri: result.Poster}}
-                style={{width: '100%', height: 300}}
-                resizeMode="cover"
-              />
-              <Text style={styles.title}>{result.Title}</Text>
-            </View>
+          {this.props.movies.map((result: any) => (
+            <TouchableHighlight
+              key={result.imdbID}
+              onPress={() => {
+                this.props.display(result.Title);
+                this.props.navigation.navigate('Details');
+              }}>
+              <View style={styles.result}>
+                <Image
+                  source={{uri: result.Poster}}
+                  style={{width: '100%', height: 300}}
+                  resizeMode="cover"
+                />
+                <Text style={styles.title}>{result.Title}</Text>
+              </View>
+            </TouchableHighlight>
           ))}
         </ScrollView>
       </View>
@@ -68,17 +79,16 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapStatetoProps = (state) => {
-  console.log('Aqui');
-  console.log(state.movieReducer.results);
+const mapStatetoProps = (state: any) => {
   return {
     movies: state.movieReducer.results,
   };
 };
 
-const mapDispatchtoProps = (dispatch) => {
+const mapDispatchtoProps = (dispatch: any) => {
   return {
-    search: (searchParam) => dispatch(searchMovies(searchParam)),
+    search: (searchParam: any) => dispatch(searchMovies(searchParam)),
+    display: (title: any) => dispatch(displayDetails(title)),
   };
 };
 

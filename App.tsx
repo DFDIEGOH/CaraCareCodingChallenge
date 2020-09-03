@@ -1,12 +1,28 @@
 import React from 'react';
+import 'react-native-gesture-handler';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
-import {View, Text} from 'react-native';
+const Stack = createStackNavigator();
+
 import Home from './src/Home';
+import Details from './src/components/Details';
 
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
-  return <Home />;
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen name="Details" component={Details} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 };
 
 export default App;
