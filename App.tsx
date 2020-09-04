@@ -1,5 +1,7 @@
 import React from 'react';
+import {View} from 'react-native';
 import 'react-native-gesture-handler';
+
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
@@ -19,7 +21,19 @@ const App = () => {
           component={Home}
           options={{headerShown: false}}
         />
-        <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen
+          name="Details"
+          component={Details}
+          options={{
+            headerStyle: {
+              backgroundColor: '#162533',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              textAlign: 'right',
+            },
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
