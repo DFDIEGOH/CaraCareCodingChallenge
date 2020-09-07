@@ -7,7 +7,7 @@ const initialState = {
   selected: {},
 };
 
-const movieReducer = (state = initialState, action) => {
+const movieReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case SEARCH_MOVIE:
       return {

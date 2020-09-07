@@ -30,11 +30,11 @@ class Details extends Component {
               <Text style={{fontWeight: 'bold'}}>Genre:</Text> {result.Genre}
             </Text>
             <Text style={styles.detailsSubInfo}>
-              <Text style={{fontWeight: 'bold'}}>Director:</Text>{' '}
+              <Text style={{fontWeight: 'bold'}}>Director:</Text>
               {result.Director}
             </Text>
             <Text style={styles.detailsSubInfo}>
-              <Text style={{fontWeight: 'bold'}}>Starring:</Text>{' '}
+              <Text style={{fontWeight: 'bold'}}>Starring:</Text>
               {result.Actors}
             </Text>
           </View>

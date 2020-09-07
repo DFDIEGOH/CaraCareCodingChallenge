@@ -11,7 +11,6 @@ import {
   TouchableHighlight,
 } from 'react-native';
 import {Card} from 'react-native-elements';
-import {Dimensions} from 'react-native';
 import {connect} from 'react-redux';
 import {searchMovies, displayDetails} from './actions/movies';
 
