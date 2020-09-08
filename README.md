@@ -1,14 +1,15 @@
 # <h1>CaraCareCodingChallenge- Movie Catalog (React Native) </h1>
 
 # <h1>Description</h1>
-# <h3>This is an App that was created using React Native with the incorporation of the OMDB API.</h3>
-# <h3>It allows the user to search for a movie using the Search Bar and allows them to see all the results according the input.</h3>
-# <h3>It also allows the user the see all the Detailes related to the movie that they are looking for such as:</h3>
-# <h3> • The name of the movie</h3>
-# <h3> • The Director</h3>
-# <h3> • The Rating</h3>
-# <h3> • The Plot</h3>
-# <h3> • The Cast</h3>
+# <h3>This is an App that was created using React Native with the incorporation of the OMDB API. <br>
+It allows the user to search for a movie using the Search Bar and allows them to see all the results according the input.<br>
+It also allows the user the see all the Detailes related to the movie that they are looking for such as:</h3>
+
+# <h3> • The name of the movie <br>
+# • The Director<br>
+#  • The Rating<br>
+#  • The Plot<br>
+#  • The Cast</h3>
 
 
 # <h1>Clone</h1>
