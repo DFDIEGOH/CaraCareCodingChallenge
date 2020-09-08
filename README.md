@@ -11,9 +11,9 @@
 # react-native run-ios     (For IOS)
 # 
 <h1>Screenshots</h1>
-<img src="https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/HomePhoto.jpg" width="200">
-<img src="https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Results_1.jpg" width="200">
-<img src="https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Results_2.jpg" width="200">
-<img src="https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Details_1.jpg" width="200">
+
+|<img src="https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/HomePhoto.jpg" width="200">|<img src="https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Results_1.jpg" width="200">| <img src="https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Results_2.jpg" width="200"> |<img src="https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Results_2.jpg" width="200">|
+
+
 <img src="https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Details_2.jpg" width="200">
 
