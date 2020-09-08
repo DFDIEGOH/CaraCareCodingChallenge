@@ -19,7 +19,7 @@ It also allows the user the see all the Detailes related to the movie that they 
 # <h3>Install all libraries with:</h3>
 npm install
 # <h3>Then Run it on a simulator (If you are using a physical device you can use the following command)</h3>
-react-native run-android (For android)
+react-native run-android (For android) <br>
 react-native run-ios     (For IOS) 
 # 
 <h1>Screenshots</h1>
