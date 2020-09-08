@@ -5,11 +5,11 @@ This is an App that was created using React Native with the incorporation of the
 It allows the user to search for a movie using the Search Bar and allows them to see all the results according the input.<br>
 It also allows the user the see all the Detailes related to the movie that they are looking for such as:
 
-# • The name of the movie <br>
-# • The Director<br>
-#  • The Rating<br>
-#  • The Plot<br>
-#  • The Cast
+• The name of the movie <br>
+• The Director<br>
+• The Rating<br>
+• The Plot<br>
+• The Cast
 
 
 # <h1>Clone</h1>
@@ -17,10 +17,10 @@ It also allows the user the see all the Detailes related to the movie that they 
 
 # <h1>Setup </h1>
 # <h3>Install all libraries with:</h3>
-# <h4>npm install</h4>
+npm install
 # <h3>Then Run it on a simulator (If you are using a physical device you can use the following command)</h3>
-# <h4>react-native run-android (For android)</h4>
-# <h4>react-native run-ios     (For IOS) </h4>
+react-native run-android (For android)
+react-native run-ios     (For IOS) 
 # 
 <h1>Screenshots</h1>
 
