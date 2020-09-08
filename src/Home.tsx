@@ -2,7 +2,6 @@
 /* eslint-disable prettier/prettier */
 import React, {Component} from 'react';
 import {
-  StyleSheet,
   View,
   Text,
   TextInput,
@@ -10,10 +9,12 @@ import {
   Image,
   TouchableHighlight,
 } from 'react-native';
+import styles from './styles/Home';
 import {Card} from 'react-native-elements';
 import {connect} from 'react-redux';
 import {searchMovies, displayDetails} from './actions/movies';
 
+//HOME SCREEN
 class Home extends Component {
   constructor() {
     super();
@@ -38,103 +39,57 @@ class Home extends Component {
             />
           </View>
         </View>
-        <ScrollView>
-          {this.props.movies.map((result: any) => (
-            <Card
-              key={result.imdbID}
-              containerStyle={{
-                backgroundColor: '#162533',
-                borderRadius: 10,
-                borderColor: '#162533',
-              }}>
-              <TouchableHighlight
-                onPress={() => {
-                  this.props.display(result.Title);
-                  this.props.navigation.navigate('Details');
+        {/*Checks if the user already has search a movie, if not the welcome message will be shown */}
+        {this.props.movies.length === 0 ? (
+          <View style={styles.homeTextContainer}>
+            <Text style={styles.homeText}>
+              Welcome to the Movie Catalog APP
+            </Text>
+          </View>
+        ) : (
+          <ScrollView>
+            {this.props.movies.map((result: any) => (
+              <Card
+                key={result.imdbID}
+                containerStyle={{
+                  backgroundColor: '#162533',
+                  borderRadius: 10,
+                  borderColor: '#162533',
                 }}>
-                <View style={styles.result}>
-                  <Image
-                    source={{uri: result.Poster}}
-                    style={{width: '30%', height: 125}}
-                  />
-                  <View style={{flex: 1}}>
-                    <Text style={styles.resultTitle}>{result.Title}</Text>
-                    <Text style={styles.resultSubtitle}>{result.Year}</Text>
-
-                    <Text style={styles.resultType}>
-                      {typeof (result.Type !== 'undefined')
-                        ? result.Type === 'movie'
-                          ? 'Movie'
-                          : result.Type === 'series'
-                          ? 'Series'
-                          : ''
-                        : ''}
-                    </Text>
+                <TouchableHighlight
+                  onPress={() => {
+                    this.props.display(result.Title);
+                    this.props.navigation.navigate('Details');
+                  }}>
+                  <View style={styles.result}>
+                    <Image
+                      source={{uri: result.Poster}}
+                      style={{width: '30%', height: 125}}
+                    />
+                    <View style={{flex: 1}}>
+                      <Text style={styles.resultTitle}>{result.Title}</Text>
+                      <Text style={styles.resultSubtitle}>{result.Year}</Text>
+                      {/* Checks the type of the results and it displays it depending on the Type*/}
+                      <Text style={styles.resultType}>
+                        {typeof (result.Type !== 'undefined')
+                          ? result.Type === 'movie'
+                            ? 'Movie'
+                            : result.Type === 'series'
+                            ? 'Series'
+                            : ''
+                          : ''}
+                      </Text>
+                    </View>
                   </View>
-                </View>
-              </TouchableHighlight>
-            </Card>
-          ))}
-        </ScrollView>
+                </TouchableHighlight>
+              </Card>
+            ))}
+          </ScrollView>
+        )}
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#223343',
-    paddingTop: 50,
-    justifyContent: 'center',
-  },
-  headerContainer: {
-    alignItems: 'center',
-  },
-  header: {
-    display: 'flex',
-    flexDirection: 'row',
-    paddingBottom: 20,
-  },
-  title: {
-    color: '#fff',
-    fontSize: 30,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  searchbox: {
-    color: 'white',
-    marginLeft: 50,
-    backgroundColor: '#162533',
-    fontSize: 20,
-    textAlign: 'center',
-    borderRadius: 8,
-    width: '50%',
-  },
-  result: {
-    flexDirection: 'row',
-    paddingLeft: 20,
-    paddingRight: 20,
-    justifyContent: 'center',
-  },
-  resultTitle: {
-    color: '#fff',
-    fontSize: 18,
-    paddingLeft: 40,
-    marginBottom: 10,
-  },
-  resultSubtitle: {
-    color: '#96b7d4',
-    fontSize: 13,
-    paddingLeft: 40,
-  },
-  resultType: {
-    color: '#96b7d4',
-    fontSize: 13,
-    paddingLeft: 40,
-    marginTop: 10,
-  },
-});
 
 const mapStatetoProps = (state: any) => {
   return {

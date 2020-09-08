@@ -5,14 +5,8 @@
 import 'react-native';
 import axios from 'axios';
 
-import * as actions from '../src/actions/movies';
-import * as types from '../src/actions/types';
-
 import reducer from '../src/reducers/movieReducer';
 import {initialState} from '../src/reducers/movieReducer';
-
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
 
 const pathApi = 'http://www.omdbapi.com/?i=tt3896198&apikey=a120ef66';
 
