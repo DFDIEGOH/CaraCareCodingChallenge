@@ -10,8 +10,8 @@
 # react-native run-android (For android)
 # react-native run-ios     (For IOS)
 # <h1>Screenshots</h1>
-![Home](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/images/HomePhoto.jpg)
-![Search1](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/images/Results_1.jpg)
-![Search2](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/images/Results_2.jpg)
-![Details1](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/images/Details_1.jpg)
-![Details2](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/images/Details_2.jpg)
+![Home](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/HomePhoto.jpg)
+![Search1](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Results_1.jpg)
+![Search2](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Results_2.jpg)
+![Details1](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Details_1.jpg)
+![Details2](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Details_2.jpg)
