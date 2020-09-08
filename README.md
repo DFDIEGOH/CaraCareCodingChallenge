@@ -11,6 +11,7 @@
 # react-native run-ios     (For IOS)
 # 
 <h1>Screenshots</h1>
+<img src="https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/HomePhoto.jpg" width="48">
 ![Home](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/HomePhoto.jpg){:height="50%" width="50%"}
 ![Search1](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Results_1.jpg | width=100)
 ![Search2](https://raw.githubusercontent.com/dfdiegoh/CaraCareCodingChallenge/master/src/images/Results_2.jpg | width=100)
