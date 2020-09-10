@@ -13,7 +13,7 @@ It also allows the user the see all the Detailes related to the movie that they 
 
 
 # <h1>Clone</h1>
-# <h3>Clone this repo to your local machine using: [GitHub/DFDIEGOH/CaraCareCodingChallenge](https://github.com/DFDIEGOH/CaraCareCodingChallenge)</h3>
+# <h3>Clone this repo to your local machine using: [GitHub/DFDIEGOH/MovieCatalog](https://github.com/DFDIEGOH/MovieCatalog)</h3>
 
 # <h1>Setup </h1>
 # <h3>Install all libraries with:</h3>
