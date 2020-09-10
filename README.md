@@ -1,4 +1,4 @@
-# <h1>CaraCareCodingChallenge- Movie Catalog (React Native) </h1>
+# <h1>Movie Catalog (React Native) </h1>
 
 # <h1>Description</h1>
 This is an App that was created using React Native with the incorporation of the OMDB API. <br>
