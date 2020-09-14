@@ -1,4 +1,4 @@
-# <h1>CaraCareCodingChallenge- Movie Catalog (React Native) </h1>
+# <h1>Movie Catalog (React Native) </h1>
 
 # <h1>Description</h1>
 This is an App that was created using React Native with the incorporation of the OMDB API. <br>
@@ -13,7 +13,7 @@ It also allows the user the see all the Detailes related to the movie that they 
 
 
 # <h1>Clone</h1>
-# <h3>Clone this repo to your local machine using: [GitHub/DFDIEGOH/CaraCareCodingChallenge](https://github.com/DFDIEGOH/CaraCareCodingChallenge)</h3>
+# <h3>Clone this repo to your local machine using: [GitHub/DFDIEGOH/MovieCatalog](https://github.com/DFDIEGOH/MovieCatalog)</h3>
 
 # <h1>Setup </h1>
 # <h3>Install all libraries with:</h3>
