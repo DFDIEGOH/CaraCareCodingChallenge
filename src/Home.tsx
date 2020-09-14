@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
-import React, {Component} from 'react';
+import React from 'react';
 import {
   View,
   Text,
@@ -15,9 +15,15 @@ import {connect} from 'react-redux';
 import {searchMovies, displayDetails} from './actions/movies';
 
 //HOME SCREEN
-class Home extends Component {
-  constructor() {
-    super();
+interface stateHome {
+  search: any;
+  movies: any;
+  display: any;
+  navigation: any;
+}
+class Home extends React.Component<stateHome> {
+  constructor(props: any) {
+    super(props);
   }
   state = {
     search: '',
@@ -99,8 +105,8 @@ const mapStatetoProps = (state: any) => {
 
 const mapDispatchtoProps = (dispatch: any) => {
   return {
-    search: (searchParam: any) => dispatch(searchMovies(searchParam)),
-    display: (title: any) => dispatch(displayDetails(title)),
+    search: (searchParam: string) => dispatch(searchMovies(searchParam)),
+    display: (title: string) => dispatch(displayDetails(title)),
   };
 };
 

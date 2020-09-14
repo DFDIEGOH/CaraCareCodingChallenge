@@ -1,12 +1,15 @@
 /* eslint-disable prettier/prettier */
-import React, {Component} from 'react';
+import React from 'react';
 import {View, Text, Image} from 'react-native';
 import {connect} from 'react-redux';
 import {Icon} from 'react-native-elements/';
 import styles from '../styles/Details';
 
 //DETAILS SCREEN
-class Details extends Component {
+interface MyProps {
+  selected: any;
+}
+class Details extends React.Component<MyProps> {
   render() {
     let result = this.props.selected;
     return (
